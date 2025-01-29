@@ -11,8 +11,7 @@ interface Directors extends Teacher {
   numberOfReports: number;
 }
 
-// Use unique variable names to avoid conflicts
-const teacherInstance: Teacher = {
+const teacher3: Teacher = {
   firstName: 'John',
   fullTimeEmployee: false,
   lastName: 'Doe',
@@ -20,7 +19,7 @@ const teacherInstance: Teacher = {
   contract: false,
 };
 
-const directorInstance: Directors = {
+const director1: Directors = {
   firstName: 'John',
   lastName: 'Doe',
   location: 'London',
@@ -28,5 +27,5 @@ const directorInstance: Directors = {
   numberOfReports: 17,
 };
 
-console.log(teacherInstance);
-console.log(directorInstance);
+console.log(teacher3);
+console.log(director1);
