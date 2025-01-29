@@ -7,7 +7,12 @@ interface Teacher {
   [key: string]: any;
 }
 
-const teacher3: Teacher = {
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
+// Use unique variable names to avoid conflicts
+const teacherInstance: Teacher = {
   firstName: 'John',
   fullTimeEmployee: false,
   lastName: 'Doe',
@@ -15,4 +20,13 @@ const teacher3: Teacher = {
   contract: false,
 };
 
-console.log(teacher3);
+const directorInstance: Directors = {
+  firstName: 'John',
+  lastName: 'Doe',
+  location: 'London',
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+
+console.log(teacherInstance);
+console.log(directorInstance);
